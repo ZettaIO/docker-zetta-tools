@@ -1,7 +1,9 @@
 #! /bin/bash
 
 # /config is supposed to be mounted, and contain custom init files
-source /config/*.sh
+for file in /config/*.sh; do
+    source "$file"
+done
 
 checkEnvDefined() {
     [ $(eval echo \$$1) ] || (echo "ERROR: $1 not defined" ; exit 1)
