@@ -17,4 +17,7 @@ ADD bin /root/bin
 VOLUME /root/.docker/machine
 VOLUME /config
 
+# Symlink .bashrc for customizing bash
+RUN ln -sf /config/bashrc /root/.bashrc
+
 ENTRYPOINT ["/entrypoint.sh"]
