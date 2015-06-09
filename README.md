@@ -7,11 +7,11 @@ Zetta.io cloud.
 
 You authenticate to Zetta.io with a domain, username, and password. You should define them in a .sh file
 ```
-ZETTA_DOMAIN_NAME=<your domain name>
-ZETTA_DOMAIN_ID=<your domain id>
-ZETTA_USERNAME=<your username>
-ZETTA_PASSWORD=<your password>
-ZETTA_PROJECT=<your project>  # Optional, if not defined it defaults to 'Standard'
+export ZETTA_DOMAIN_NAME=<your domain name>
+export ZETTA_DOMAIN_ID=<your domain id>
+export ZETTA_USERNAME=<your username>
+export ZETTA_PASSWORD=<your password>
+export ZETTA_PROJECT=<your project>  # Optional, if not defined it defaults to 'Standard'
 ```
 
 This file should be in a directory that is bound during container creation.
